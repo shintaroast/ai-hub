@@ -1,0 +1,39 @@
+{
+  "providers": {
+    "openai": {
+      "kind": "openai",
+      "base": "https://api.openai.com/v1",
+      "key_env": "OPENAI_API_KEY",
+      "model": "gpt-5"
+    },
+    "gemini": {
+      "kind": "openai",
+      "base": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "key_env": "GEMINI_API_KEY",
+      "model": "gemini-2.5-pro"
+    },
+    "xai": {
+      "kind": "openai",
+      "base": "https://api.x.ai/v1",
+      "key_env": "XAI_API_KEY",
+      "model": "grok-4"
+    },
+    "openrouter": {
+      "kind": "openai",
+      "base": "https://openrouter.ai/api/v1",
+      "key_env": "OPENROUTER_API_KEY",
+      "model": "nousresearch/hermes-4-405b"
+    }
+  },
+  "aliases": {
+    "chatgpt": "openai",
+    "gpt": "openai",
+    "grok": "xai",
+    "hermes": "openrouter"
+  },
+  "all": [
+    "chatgpt",
+    "gemini",
+    "grok"
+  ]
+}
