@@ -10,7 +10,7 @@
       "kind": "openai",
       "base": "https://generativelanguage.googleapis.com/v1beta/openai",
       "key_env": "GEMINI_API_KEY",
-      "model": "gemini-2.5-pro"
+      "model": "gemini-3.5-flash"
     },
     "xai": {
       "kind": "openai",

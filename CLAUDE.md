@@ -16,6 +16,7 @@
 - API キーはクラウド環境のネットワークシークレットとしてプロキシが注入する。キーをファイルやチャットに書かないこと。
 - 401/403 が返ったら、そのホストの credential を `request_credential` で依頼する。
 - モデル名が古くなったら `python3 ask.py models openai` などで確認し、`config.json` を更新する。
+- Gemini は無料枠のため `gemini-3.5-flash` を標準にしている（`gemini-3.1-pro-preview` は無料枠では 429 になる。課金設定後に `-m` で指定可）。
 
 ## ユーザーの PC 上で動くエージェント（Hermes Agent / Orca）
 
